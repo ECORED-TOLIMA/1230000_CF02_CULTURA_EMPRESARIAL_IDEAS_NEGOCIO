@@ -32,7 +32,7 @@
     p.mt-4(data-aos="fade-right") Los cuatro contenidos que lo conforman recorren esa secuencia, del componente básico del proceso hasta el indicador que verifica la mejora:
 
     //- Cuatro tarjetas de 299/315/315/301 x382 con el círculo BLANCO de 98 dentro.
-    .tarjeta--container.row.mt-4(data-aos="fade-up")
+    .tarjeta--container.row.mt-4(data-aos="fade-up" style="--alto-tarjeta: 382px")
       .col-md.tarjeta.bg-1.p-4
         figure.mb-3
           img(src="@/assets/curso/temas/t3/cont-1.svg" style="width: 98px").m-auto

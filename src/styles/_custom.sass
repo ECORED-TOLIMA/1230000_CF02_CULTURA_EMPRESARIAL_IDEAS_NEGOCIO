@@ -9,6 +9,7 @@
 // celda, que es justo el de la ilustracion (506 px).
 //   distintivo 1: 80x80 en (857,456) -> pegado a la izquierda, 123 px sobre el borde inferior
 //   distintivo 2: 80x80 en (1283,385) -> pegado a la derecha, 194 px sobre el borde inferior
+//   distintivo 3: 70x70 en (1205,549) -> 348 px desde la izquierda, 40 sobre el borde inferior
 .banner-principal__img
   // La rejilla SOLO de lg para arriba: la columna lleva `.d-none.d-lg-block` y por debajo el
   // diseno quita la ilustracion. Sin el @media, el !important pisaba el `d-none`.
@@ -20,6 +21,10 @@
     position: relative !important
     align-self: end
     width: 15.8%                     // 80 de 506
+  // El tercero mide 70, no 80: el ancho va aqui porque `> div` gana en especificidad a
+  // `.banner-principal-decorativo-3`.
+  > div.banner-principal-decorativo-3
+    width: 13.8%                     // 70 de 506
 
 .banner-principal-decorativo
   &-1
@@ -30,6 +35,13 @@
     animation: float1 2.5s ease-in-out infinite alternate
     justify-self: end
     margin-bottom: 38.3%             // 80x80 en (1283,385): pegado a la derecha, 194 sobre el borde
+  &-3
+    // El tercero es MAS PEQUENO (70, no 80) y no va pegado a ningun borde: 348 px desde la
+    // izquierda de la ilustracion y 40 sobre su borde inferior. 70x70 en (1205,549).
+    animation: float1 3.1s ease-in-out infinite alternate
+    justify-self: start
+    margin-left: 68.8%
+    margin-bottom: 9.3%              // 40 sobre el borde + los 7 que baja al medir 70 y no 80
 
 
 @keyframes float1
@@ -228,6 +240,11 @@ figcaption
     flex-grow: .95
   > .tarjeta
     border-radius: 0
+    // El XD fija el alto de la fila (492 en el 1.3, 341 en el 2.5, 382 en el 3, 330 en el 4.3
+    // y el 5.2) y el kit lo deja al contenido: salian entre 48 y 89 px mas bajas. La medida
+    // viaja desde el Pug en `--alto-tarjeta`, junto al bloque al que pertenece.
+    @media (min-width: $bp-min-lg)
+      min-height: var(--alto-tarjeta, auto)
   > .tarjeta:first-child
     border-radius: 20px 0 0 20px
   > .tarjeta:last-child

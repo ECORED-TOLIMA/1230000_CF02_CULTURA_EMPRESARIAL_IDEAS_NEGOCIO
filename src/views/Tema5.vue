@@ -125,7 +125,7 @@
     p.mt-4(data-aos="fade-right") La propuesta formulada consiste en implementar una herramienta de gestión de solicitudes de servicio que registre cada orden desde su recepción, la asigne según la carga de cada técnico y conserve el historial de intervenciones por equipo. La secuencia del cambio se resume así:
 
     //- Cuatro tarjetas de 299/315/315/301 x330 con el círculo blanco de 98 dentro.
-    .tarjeta--container.row.mt-4(data-aos="fade-up")
+    .tarjeta--container.row.mt-4(data-aos="fade-up" style="--alto-tarjeta: 330px")
       .col-md.tarjeta.bg-1.p-4
         figure.mb-3
           img(src="@/assets/curso/temas/t5/tab-1.svg" style="width: 98px").m-auto

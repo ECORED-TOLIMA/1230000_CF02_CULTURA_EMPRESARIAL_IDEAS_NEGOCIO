@@ -269,7 +269,7 @@
     .banda-1.mt-5
       .row.justify-content-center
         .col-lg-10
-          .tarjeta--container.row(data-aos="fade-up")
+          .tarjeta--container.row(data-aos="fade-up" style="--alto-tarjeta: 492px")
             .col-md.tarjeta.bg-1-p.p-4
               figure.mb-3
                 img(src="@/assets/curso/temas/t1/ruta-1.svg" style="width: 160px").m-auto

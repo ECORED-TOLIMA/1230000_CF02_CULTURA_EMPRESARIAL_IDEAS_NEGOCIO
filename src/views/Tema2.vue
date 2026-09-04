@@ -488,7 +488,7 @@
         p.mt-4.mb-0(data-aos="fade-left") Redactar la conclusión obliga a ordenar lo que hasta ese punto estaba disperso en la matriz de calificación. No basta con señalar cuál alternativa obtuvo el mejor puntaje: hay que dejar por escrito qué la respalda, qué quedó sin verificar y en qué circunstancias dejaría de ser la mejor opción. Ese orden protege al equipo cuando el contexto cambia y evita que la discusión vuelva a empezar desde cero. Una conclusión fundamentada se construye con cuatro elementos, en este orden:
 
     //- Cuatro tarjetas de 299/315/315/301 x341 con el círculo #83C1E8 de 98 dentro.
-    .tarjeta--container.row.mt-4(data-aos="fade-up")
+    .tarjeta--container.row.mt-4(data-aos="fade-up" style="--alto-tarjeta: 341px")
       .col-md.tarjeta.bg-1.p-4
         figure.mb-3
           img(src="@/assets/curso/temas/t2/elem-1.svg" style="width: 98px").m-auto

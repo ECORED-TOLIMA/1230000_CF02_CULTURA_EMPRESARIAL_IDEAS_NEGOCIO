@@ -428,7 +428,7 @@
     p(data-aos="fade-right") Una propuesta de valor sólida se reconoce por cuatro atributos, que conviene comprobar sobre el enunciado ya redactado y no sobre la intención que lo inspiró:
 
     //- Cuatro tarjetas de 299/315/315/301 x330 con el círculo #EBE9FB de 98 dentro.
-    .tarjeta--container.row.mt-4(data-aos="fade-up")
+    .tarjeta--container.row.mt-4(data-aos="fade-up" style="--alto-tarjeta: 330px")
       .col-md.tarjeta.bg-1.p-4
         figure.mb-3
           img(src="@/assets/curso/temas/t4/atr-1.svg" style="width: 98px").m-auto
