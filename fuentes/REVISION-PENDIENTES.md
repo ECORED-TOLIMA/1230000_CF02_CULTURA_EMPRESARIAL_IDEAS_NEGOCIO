@@ -20,3 +20,20 @@ quedan a la espera de un material que todavía no llegó.
    audio de silencio con la duración de referencia; hay que sustituir
    `src/assets/curso/temas/t3/podcast.mp3` por la locución definitiva.
 
+4. **La actividad — las diez imágenes.** El `_AD.docx` no trae imágenes y el `.xd` no tiene
+   artboard de actividad; sus `resources/` sólo guardan **tres** personas recortadas sobre fondo
+   transparente (`a6458f5e`, `f68e3e31`, `b92676a4`) y el componente del kit pide diez. Se toman
+   las diez composiciones del componente CF01 de este mismo curso: persona recortada sobre la
+   forma magenta `#FB82FF` con la insignia amarilla, que es el tratamiento gráfico de este curso
+   y no el de otro; el propio `.xd` ya comparte assets entre los dos componentes (`a6458f5e`
+   aparece en ambos). La alternativa —recortar personas nuevas de las fotos de los temas, que no
+   vienen sobre fondo transparente, o volver a los recortes cuadrados— ya se corrigió una vez y
+   no se repite. Para cerrarlo hacen falta diez recortes propios de este componente, o la
+   confirmación de que los del CF01 sirven para los dos.
+
+5. **El PDF del menú «Descargar PDF» lo pone el cliente.** El scaffold apuntaba a
+   `downloads/dist.pdf`, que no existe. En los entregables de este cliente el fichero se llama
+   `<código>_CF0N_CFA_DU.pdf` y lo sube el revisor en un commit «CFA» (así está en
+   `11210049_CF02_GESTION_TALENTO_HUMANO_CONTEXTO_LABORAL`). El menú ya apunta a
+   `downloads/01230000_CF02_CFA_DU.pdf`; falta el fichero.
+

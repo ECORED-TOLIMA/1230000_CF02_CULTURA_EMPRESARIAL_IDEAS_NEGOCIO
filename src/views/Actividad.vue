@@ -1,15 +1,15 @@
 <template lang="pug">
-  .curso-main-container.pb-3
-    BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
-    .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      // Para cuestionario usar: <ActividadController :cuestionario="cuestionario"/>
-      // Para parrafo usar: <ActividadController :parrafo="parrafo"/>
-      #Actividad                
-      <ActividadController :cuestionario="cuestionario"/>
-  
-  </template>
+.curso-main-container.pb-3
+  BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
+  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+    #Actividad
+    ActividadController(:cuestionario="cuestionario")
+
+</template>
 
 <script>
+//- GENERADO por `scripts/gen_actividad.py` desde `01230000_CF02_AD.docx`.
+//- No editar a mano: volver a correr el script si cambia el docx.
 import ActividadController from '@ecored-sena/boulder-kit/plugin/components/actividad/ActividadController.vue'
 
 export default {
@@ -19,489 +19,624 @@ export default {
   },
   data: () => ({
     cuestionario: {
-      tema: 'Microcontroladores y sensores',
+      tema: 'Formulación de ideas de negocio e innovación empresarial',
       titulo: 'Cuestionario',
       introduccion:
-        '<b> Objetivo:</b> Evaluar la comprensión y el uso adecuado de las herramientas básicas en la ventana <em>Board</em> del <em>software</em> EAGLE.',
+        '<b>Objetivo:</b> verificar la apropiación de los contenidos del componente formativo mediante un cuestionario que aborda el concepto de innovación, el análisis de alternativas, el mejoramiento de los procesos productivos y la formulación de la propuesta empresarial.',
+      // el kit sólo muestra 10 de las 20: barajar es OBLIGATORIO
       barajarPreguntas: true,
       titulo_aprobado: '¡BUEN TRABAJO!',
-      titulo_reprobado: 'VUELVA A INTENTARLO.',
+      titulo_reprobado: 'VUELVA A INTENTARLO',
+      // `mensaje_final_*`, NO `mensaje_*`: es el nombre que lee
+      // `actividadCuestionario/Actividad.vue` del kit (1.0.9). Con el nombre corto los dos
+      // mensajes finales del docx no se pintan nunca y no salta ningún error.
+      mensaje_final_aprobado: 'Ha superado la actividad. Sus respuestas demuestran conocimientos sólidos sobre el concepto de innovación empresarial, el análisis de alternativas de solución, el mejoramiento de los procesos productivos y la formulación de la propuesta ante quienes deben respaldarla.',
+      mensaje_final_reprobado: 'No ha superado la actividad. Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
       preguntas: [
         {
           id: 1,
-          texto:
-            '¿Cuál es la función principal de la herramienta <em>Layer</em> en la ventana <em>Board</em>?',
+          texto: '¿Qué tres elementos definen la innovación empresarial?',
           imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'Creatividad, inversión y tecnología.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Seleccionar y editar capas que identifican márgenes, pistas y componentes.',
+              texto: 'Novedad, implementación y valor.',
               esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Ajustar automáticamente las pistas de cada componente.',
+              texto: 'Planificación, ejecución y evaluación.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Modificar el tamaño de los componentes.',
+              texto: 'Producto, mercado y precio.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto:
-            'Lo sentimos, su respuesta no es la correcta. <em>Board</em> del <em>software</em> EAGLE.',
+          mensaje_correcto: 'Sin novedad, sin aplicación o sin valor, la iniciativa es una invención, una rutina o un gasto.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 2,
-          texto:
-            '¿Qué herramienta permite agregar texto en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto: '¿Qué innovación redefine cómo la empresa crea y captura valor?',
+          imagen: '@/assets/actividad/imagen2.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Layer</em>',
+              texto: 'De producto.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Auto</em>',
+              texto: 'De proceso.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Text</em>',
+              texto: 'De modelo de negocio.',
               esCorrecta: true,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
+              texto: 'Organizacional.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'La innovación de modelo de negocio cambia el canal, el segmento atendido o el esquema de cobro.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 3,
-          texto: '¿Para qué sirve la herramienta <em>Show</em> en EAGLE?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto: '¿Quién formuló el concepto de innovación disruptiva?',
+          imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Para borrar conexiones.',
+              texto: 'Michael Porter.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'Para cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Alexander Osterwalder.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Para agregar nuevas capas.',
-              esCorrecta: false,
+              texto: 'Clayton Christensen.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'Para resaltar conexiones de pines.',
-              esCorrecta: true,
+              texto: 'Peter Drucker.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Christensen describió cómo una oferta más simple entra por segmentos poco atendidos y desplaza a los competidores.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 4,
-          texto:
-            '¿Qué botón se utiliza para cambiar entre las ventanas <em>Schematic</em> y <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen1.png',
+          texto: '¿Qué norma creó el Ministerio de Ciencia, Tecnología e Innovación?',
+          imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: '<em>Text</em>',
+              texto: 'Ley 1014 de 2006.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: '<em>Layer</em>',
+              texto: 'Ley 789 de 2002.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: '<em>Board</em>',
-              esCorrecta: true,
+              texto: 'Ley 1286 de 2009.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto: '<em>Route</em>',
-              esCorrecta: false,
+              texto: 'Ley 1951 de 2019.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'La Ley 1286 de 2009 fortaleció el sistema; el ministerio lo creó la Ley 1951 de 2019.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 5,
-          texto: '¿Qué permite hacer la herramienta <em>Route</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Qué condiciones cumple un buen conjunto de alternativas?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto:
-                'Enrutar manualmente las pistas que no se ajustaron automáticamente.',
+              texto: 'Se excluyen entre sí y cubren las salidas razonables.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Resaltar las conexiones de los pines.',
+              texto: 'Son innovadoras y económicas.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Crear una nueva capa en el diseño.',
+              texto: 'Cuentan con aval de un financiador.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'Cambiar de ventana entre <em>Schematic</em> y <em>Board</em>.',
+              texto: 'Son tecnológicas y escalables.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Si las opciones se repiten, el puntaje se diluye; si faltan, la mejor solución no compite.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 6,
-          texto:
-            '¿Qué función tiene la herramienta <em>Auto</em> en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Cuál es el primer paso de la matriz de ponderación?',
+          imagen: '@/assets/actividad/imagen6.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Borrar componentes.',
+              texto: 'Calcular el puntaje total.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Ajustar automáticamente las pistas en cada componente.',
-              esCorrecta: true,
+              texto: 'Elegir la alternativa mejor calificada.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Crear nuevas conexiones de pines.',
-              esCorrecta: false,
+              texto: 'Definir los criterios de evaluación.',
+              esCorrecta: true,
             },
             {
               id: 'd',
-              texto: 'Seleccionar y editar capas.',
+              texto: 'Presentar el resultado al financiador.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Primero se definen los criterios; después se asignan pesos, se califica y se calcula el puntaje.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 7,
-          texto:
-            '¿Cuál es una recomendación al ubicar los componentes en la ventana <em>Board</em>?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Qué paso comprueba que el resultado de la matriz es sólido?',
+          imagen: '@/assets/actividad/imagen7.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Colocar los componentes en un solo bloque.',
+              texto: 'La definición de la escala.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Agrupar los componentes en bloques funcionales.',
-              esCorrecta: true,
+              texto: 'La asignación de los pesos.',
+              esCorrecta: false,
             },
             {
               id: 'c',
-              texto: 'Alinear todos los terminales a la derecha.',
+              texto: 'La calificación de las alternativas.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'Colocar los terminales lo más alejados posible.',
-              esCorrecta: false,
+              texto: 'La revisión de sensibilidad.',
+              esCorrecta: true,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Si el orden de las alternativas se invierte al ajustar un peso, falta información para decidir.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 8,
-          texto:
-            '¿Cuál de las siguientes capas se utiliza para añadir texto en el diseño?',
-          imagen: '@/assets/actividad/imagen2.png',
+          texto: '¿Qué sesgo lleva a insistir por lo que ya se invirtió?',
+          imagen: '@/assets/actividad/imagen8.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'tPlace',
-              esCorrecta: true,
-            },
-            {
-              id: 'b',
-              texto: 'bNames',
+              texto: 'Sesgo de confirmación.',
               esCorrecta: false,
             },
             {
+              id: 'b',
+              texto: 'Sesgo del costo hundido.',
+              esCorrecta: true,
+            },
+            {
               id: 'c',
-              texto: 'tStop',
+              texto: 'Exceso de confianza.',
               esCorrecta: false,
             },
             {
               id: 'd',
-              texto: 'bValues',
+              texto: 'Sesgo de anclaje.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'La decisión debe valorar lo que falta por invertir, no aquello que ya no se recupera.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 9,
-          texto:
-            'La herramienta <em>Text</em> en la ventana <em>Board</em> solo permite cambiar el color de las capas.',
-          imagen: '@/assets/actividad/imagen3.png',
+          texto: '¿Qué componentes integran un proceso productivo?',
+          imagen: '@/assets/actividad/imagen9.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Planificación, ejecución, control y mejora.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Entradas, transformación, salidas y retroalimentación.',
               esCorrecta: true,
             },
+            {
+              id: 'c',
+              texto: 'Materia prima, mano de obra y maquinaria.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Proveedores, empresa, clientes y distribuidores.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: '',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 10,
-          texto:
-            'La herramienta <em>Layer</em> permite seleccionar y editar capas para definir márgenes, pistas y componentes.',
-          imagen: '@/assets/actividad/imagen3.png',
+          texto: '¿Cuál es un problema tecnológico frecuente en las mipymes?',
+          imagen: '@/assets/actividad/imagen10.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'La ausencia de un sistema de calidad.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'El exceso de automatización.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La dependencia de mercados internacionales.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La sobreproducción por alta demanda.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se reconoce por quejas y reprocesos sin registro. Se corrige con fichas de control por lote.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 11,
-          texto:
-            'El botón "<em>BOARD</em>" en EAGLE solo sirve para borrar componentes en el diseño.',
-          imagen: '@/assets/actividad/imagen3.png',
+          texto: '¿Cuál es el orden de las cinco eses?',
+          imagen: '@/assets/actividad/imagen1.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto: 'Clasificar, ordenar, limpiar, estandarizar y disciplina.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Seleccionar, sistematizar, sanear, señalizar y sostener.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Simplificar, separar, seguir, supervisar y sostener.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Sistematizar, estandarizar, inspeccionar, seleccionar y superar.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Las cuatro primeras fases exigen esfuerzo concentrado; la quinta, una rutina sostenida, y allí fracasan muchas implementaciones.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 12,
-          texto:
-            'La herramienta <em>Show</em> permite resaltar conexiones para facilitar la identificación de redes.',
+          texto: '¿Cómo se calcula la tasa de calidad?',
+          imagen: '@/assets/actividad/imagen2.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Unidades producidas entre horas trabajadas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Tiempo del proceso entre unidades producidas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Costo de producción entre unidades producidas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Unidades sin defecto entre el total producido.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: 'El resultado se expresa en porcentaje y solo sirve si el registro conserva siempre el mismo criterio.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 13,
+          texto: '¿Cuántos bloques integran el lienzo del modelo de negocio?',
           imagen: '@/assets/actividad/imagen3.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: true,
+              texto: 'Cinco bloques.',
+              esCorrecta: false,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'Siete bloques.',
               esCorrecta: false,
             },
-          ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-        {
-          id: 13,
-          texto:
-            'La función <em>Auto</em> se utiliza para enrutado automático en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
-          barajarRespuestas: true,
-          opciones: [
             {
-              id: 'a',
-              texto: 'Verdadero',
+              id: 'c',
+              texto: 'Doce bloques.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Nueve bloques.',
               esCorrecta: true,
             },
-            {
-              id: 'b',
-              texto: 'Falso',
-              esCorrecta: false,
-            },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Los nueve bloques permiten ver en una página si segmentos, canales y costos resultan coherentes.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 14,
-          texto:
-            'La herramienta <em>Route</em> en la ventana <em>Board</em> ajusta automáticamente todas las pistas del diseño.',
+          texto: '¿Cuándo se redacta el resumen ejecutivo?',
           imagen: '@/assets/actividad/imagen4.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
-              esCorrecta: false,
+              texto: 'Al final, con los demás componentes listos.',
+              esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
-              esCorrecta: true,
+              texto: 'Al comienzo, antes del análisis de mercado.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Durante el plan financiero.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Después de la respuesta del financiador.',
+              esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
+          mensaje_correcto: 'Se lee primero y se escribe de último, porque sintetiza el resto de la propuesta.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
           id: 15,
-          texto:
-            'Es recomendable organizar los componentes en bloques funcionales como transformación y filtrado en la ventana <em>Board</em>.',
-          imagen: '@/assets/actividad/imagen4.png',
+          texto: '¿Qué ofrece el Fondo Nacional de Garantías?',
+          imagen: '@/assets/actividad/imagen5.png',
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Verdadero',
+              texto: 'Capital semilla no reembolsable.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Garantías para acceder a crédito bancario.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Cofinanciación de proyectos de innovación.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Capacitación en planes de negocio.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Respalda a quien no dispone de activos fijos. El capital semilla corresponde al Fondo Emprender.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 16,
+          texto: '¿Qué revisa quien evalúa un proyecto de innovación?',
+          imagen: '@/assets/actividad/imagen6.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'El número de empleados.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'El año de constitución.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'La magnitud del problema atendido.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'El diseño del logotipo.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'También examina la viabilidad, la capacidad del equipo, la sostenibilidad financiera y el impacto verificable.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
+        },
+        {
+          id: 17,
+          texto: '¿Qué innovación aplica quien reemplaza al intermediario por un canal propio?',
+          imagen: '@/assets/actividad/imagen7.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'De modelo de negocio.',
               esCorrecta: true,
             },
             {
               id: 'b',
-              texto: 'Falso',
+              texto: 'De producto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Organizacional.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'De proceso.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto: '¡Muy bien! Ha acertado la respuesta.',
-          mensaje_incorrecto: 'Lo sentimos, su respuesta no es la correcta.',
-        },
-      ],
-      mensaje_final_aprobado: '¡Excelente! Ha superado la actividad.',
-      mensaje_final_reprobado:
-        'Le recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica.',
-    },
-    parrafo: {
-      tema: 'Comprendiendo el diseño de presupuestos y estrategias de ahorro',
-      titulo: 'Completar frases',
-      introduccion:
-        '<b> Objetivo:</b> identificar conceptos clave relacionados con el presupuesto personal, la cultura del ahorro y la planificación financiera.',
-      instruccion:
-        'Complete correctamente los enunciados con la palabra que falta según los contenidos estudiados en el componente formativo.',
-      imagen: '@/assets/actividad/imagen1.png',
-      barajarPreguntas: true,
-      textos: [
-        {
-          id: 1,
-          texto:
-            'El [respuesta] personal es una herramienta que permite proyectar ingresos y egresos para mantener la estabilidad económica.',
-          respuesta: 'presupuesto',
+          mensaje_correcto: 'Cambiar el canal o el segmento es innovación de modelo, aunque el producto siga igual.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 2,
-          texto:
-            'La constancia en el cumplimiento del presupuesto refleja un alto nivel de [respuesta] financiera.',
-          respuesta: 'disciplina',
+          id: 18,
+          texto: '¿Qué relación hay entre la falla visible y su causa?',
+          imagen: '@/assets/actividad/imagen8.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Coinciden siempre en el mismo punto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'La causa suele estar varios pasos atrás.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'La causa se identifica al ejecutar la solución.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'La falla se corrige ampliando el equipo.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Intervenir el efecto sin rastrear su origen produce soluciones costosas que no resuelven el problema.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 3,
-          texto:
-            'Ahorrar no es lo que sobra, sino lo que se [respuesta] guardar antes de gastar.',
-          respuesta: 'planifica',
+          id: 19,
+          texto: '¿Qué comparten los cuatro casos del componente formativo?',
+          imagen: '@/assets/actividad/imagen9.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Requirieron maquinaria nueva.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Se financiaron con recursos públicos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Parten de un problema con cifra y causa.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Son empresas con más de veinte años.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: 'Enuncian el problema, comparan alternativas con criterios explícitos y definen cómo verificar el resultado.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
         {
-          id: 4,
-          texto:
-            'Un gasto innecesario que puede eliminarse sin afectar la calidad de vida básica se denomina gasto [respuesta].',
-          respuesta: 'discrecional',
-        },
-        {
-          id: 5,
-          texto:
-            'La cultura del ahorro promueve el uso responsable de los [respuesta] disponibles.',
-          respuesta: 'recursos',
-        },
-        {
-          id: 6,
-          texto:
-            'El estado de [respuesta] personales permite analizar la relación entre ingresos y egresos en un periodo determinado.',
-          respuesta: 'resultados',
-        },
-        {
-          id: 7,
-          texto:
-            'Cuando los ingresos son mayores que los egresos se generan una [respuesta] que puede destinarse al ahorro.',
-          respuesta: 'utilidad',
-        },
-        {
-          id: 8,
-          texto:
-            'Uno de los beneficios de ejecutar un presupuesto es la reducción del [respuesta] financiero.',
-          respuesta: 'estrés',
-        },
-        {
-          id: 9,
-          texto:
-            'Evitar gastos impulsivos y mantener límites presupuestales refleja [respuesta] financiera.',
-          respuesta: 'disciplina',
-        },
-        {
-          id: 10,
-          texto:
-            'Contar con un fondo de [respuesta] permite enfrentar gastos inesperados sin afectar el presupuesto.',
-          respuesta: 'emergencia',
+          id: 20,
+          texto: '¿Qué permite medir el proceso productivo antes de intervenirlo?',
+          imagen: '@/assets/actividad/imagen10.png',
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Reducir el precio de los insumos.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Evitar la capacitación del equipo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Prescindir de la comparación de alternativas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Demostrar después el ahorro obtenido.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: 'Sin la medición previa no existe la cifra con la que se comprueba el resultado ante un financiador.',
+          mensaje_incorrecto: 'Revise nuevamente el contenido del componente formativo.',
         },
       ],
     },
   }),
 }
 </script>
+
+<style lang="sass"></style>
