@@ -389,3 +389,31 @@ figcaption
     margin-inline: 0
     padding: 0
     background-image: none
+
+// El fondo de las tarjetas del carrusel NO es un color plano: el XD las dibuja con un patrón
+// decorativo encima del `#F0F49D` (rayos de sol arriba a la izquierda, una curva a la derecha y
+// dos tramas de líneas). Es una máscara de 327x440 en el artboard, y va como imagen de fondo
+// sobre el color, no como `<img>`, para que el texto siga encima.
+.tarjeta--patron
+  background-color: $color-primario
+  background-image: url(../assets/curso/tarjeta-patron.png)
+  background-size: 100% 100%
+  background-repeat: no-repeat
+  border-radius: 20px
+
+// Banda decorativa del carrusel de criterios del 2.3 (1328x254 en 136,6711).
+.banda-2
+  background-image: url(../assets/curso/temas/t2/banda-2.png)
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: center
+  margin-inline: -3rem
+  padding-inline: 3rem
+  @media (max-width: $bp-max-md)
+    margin-inline: 0
+    padding-inline: 0
+    background-image: none
+
+// La flecha del conector del 2.3 va en el acento de contenido, como en el XD.
+i.color-acento-contenido
+  color: $color-acento-contenido
