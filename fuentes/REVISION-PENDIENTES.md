@@ -13,3 +13,10 @@ quedan a la espera de un material que todavía no llegó.
 2. **Introducción — el video.** El artboard deja el bloque como marcador («Espacio para video»)
    y ni el `.xd` ni el `_DI.docx` traen la URL. Queda el `iframe` del scaffold hasta que llegue
    el enlace real.
+
+3. **Tema 3, apartado 3.3 — la pista del pódcast.** El artboard nombra el recurso de audio en el
+   texto («se recomienda acceder al siguiente recurso de audio») pero **no dibuja el componente**,
+   y en `fuentes/` no hay ningún `.mp3`. Se maquetó con la `TarjetaAudio` del kit y se dejó un
+   audio de silencio con la duración de referencia; hay que sustituir
+   `src/assets/curso/temas/t3/podcast.mp3` por la locución definitiva.
+
