@@ -222,14 +222,96 @@ export default {
   },
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Definición',
+      termino: 'Alternativa de solución',
+      significado:
+        'cada una de las opciones que una organización identifica para responder a un problema o aprovechar una oportunidad. Las opciones deben excluirse entre sí y cubrir en conjunto las salidas razonables del problema.',
+    },
+    {
+      termino: 'Innovación disruptiva',
+      significado:
+        'innovación que crea un mercado nuevo o transforma uno existente, al entrar por segmentos poco atendidos con una oferta más simple o económica termina desplazando a los competidores establecidos.',
+    },
+    {
+      termino: 'Innovación empresarial',
+      significado:
+        'introducción efectiva de productos, servicios, métodos o formas de organización nuevos o significativamente mejorados, que generan valor para la empresa, sus clientes y el territorio en el que opera.',
+    },
+    {
+      termino: 'Innovación incremental',
+      significado:
+        'mejora gradual y sostenida de productos, procesos o servicios existentes, que eleva el desempeño sin alterar el modelo de negocio ni la estructura del mercado en el que la empresa compite.',
+    },
+    {
+      termino: 'Kaizen',
+      significado:
+        'término japonés que designa la mejora continua. Nombra el enfoque de gestión que sostiene el cambio en el tiempo mediante ajustes pequeños y frecuentes, propuestos por el propio equipo de operación.',
+    },
+    {
+      termino: '<em>Lean manufacturing</em>',
+      significado:
+        'enfoque de gestión que clasifica y suprime el desperdicio del proceso, entendido como cualquier actividad que consume recursos sin agregar valor para quien compra el producto.',
+    },
+    {
+      termino: 'Lienzo del modelo de negocio',
+      significado:
+        'herramienta de nueve bloques que representa en una sola página cómo una organización crea, entrega y captura valor, y permite verificar la coherencia entre segmentos, canales, ingresos y costos.',
+    },
+    {
+      termino: 'Matriz de ponderación',
+      significado:
+        'herramienta de análisis que asigna pesos a los criterios de evaluación y calificaciones a cada alternativa, con el fin de obtener un puntaje comparable que deje constancia de las razones de la elección.',
+    },
+    {
+      termino: 'Proceso productivo',
+      significado:
+        'conjunto ordenado de tareas que convierte recursos en un bien o en un servicio destinado a un cliente. Se compone de entradas, transformación, salidas y retroalimentación.',
+    },
+    {
+      termino: 'Propuesta de valor',
+      significado:
+        'enunciado que precisa por qué el cliente debe preferir una solución frente a las existentes. Para resultar efectiva debe ser específica, cuantificada, creíble y diferenciada.',
     },
   ],
   referencias: [
     {
-      referencia: '---',
-      link: '---',
+      referencia:
+        'Christensen, C. M. (1997). <em>The innovator’s dilemma: when new technologies cause great firms to fail</em>. Harvard Business School Press.',
+    },
+    {
+      referencia:
+        'Confecámaras. (2023). <em>Dinámica de creación de empresas en Colombia 2023</em>. Confederación Colombiana de Cámaras de Comercio.',
+    },
+    {
+      referencia:
+        'Congreso de la República de Colombia. (2009). <em>Ley 1286 de 2009, por la cual se modifica la Ley 29 de 1990, se transforma a Colciencias en departamento administrativo y se fortalece el Sistema Nacional de Ciencia, Tecnología e Innovación</em>. Diario Oficial n.º 47.241.',
+    },
+    {
+      referencia:
+        'Congreso de la República de Colombia. (2019). <em>Ley 1951 de 2019, por la cual se crea el Ministerio de Ciencia, Tecnología e Innovación y se fortalece el Sistema Nacional de Ciencia, Tecnología e Innovación</em>. Diario Oficial n.º 50.846.',
+    },
+    {
+      referencia:
+        'Departamento Administrativo Nacional de Estadística. (2023). <em>Encuesta de micronegocios (EMICRON)</em>. DANE.',
+    },
+    {
+      referencia:
+        'iNNpulsa Colombia. (2023). <em>Ecosistemas regionales de emprendimiento: guía de navegación para emprendedores</em>. Ministerio de Comercio, Industria y Turismo.',
+    },
+    {
+      referencia:
+        'Organización para la Cooperación y el Desarrollo Económicos y Oficina Estadística de la Unión Europea. (2018). <em>Manual de Oslo: guía para la recogida, comunicación y utilización de datos sobre innovación</em> (4.ª ed.). OCDE.',
+    },
+    {
+      referencia:
+        'Osterwalder, A. y Pigneur, Y. (2010). <em>Business model generation: a handbook for visionaries, game changers, and challengers</em>. John Wiley &amp; Sons.',
+    },
+    {
+      referencia:
+        'Servicio Nacional de Aprendizaje. (2022). <em>Guía del Fondo Emprender: requisitos, convocatorias y proceso de financiación</em>. SENA.',
+    },
+    {
+      referencia:
+        'Womack, J. P. y Jones, D. T. (2003). <em>Lean thinking: banish waste and create wealth in your corporation</em> (2.ª ed.). Free Press.',
     },
   ],
   creditos: [
