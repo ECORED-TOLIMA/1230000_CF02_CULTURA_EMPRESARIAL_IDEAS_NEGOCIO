@@ -178,6 +178,10 @@ figcaption
   border-radius: 10px !important
 .r-20
   border-radius: 20px !important
+.r-arriba-10
+  border-radius: 10px 10px 0 0 !important
+.r-abajo-10
+  border-radius: 0 0 10px 10px !important
 
 // ============================================================================
 // TARJETA HOVER = `.tarjeta--boton` DEL KIT (catalogo, `CATALOGO/src/views/Tema10.vue`).
@@ -193,7 +197,10 @@ figcaption
   background-color: $color-4-vc
   border-radius: 20px
   @media (min-width: $bp-min-lg)
-    min-height: 426px         // el XD fija el alto de la tarjeta; no se deja al contenido
+    // El XD fija el alto de la tarjeta y NO es el mismo en todas las filas (426 en el 4.1,
+    // 352 en el 5.4): la medida viaja desde el Pug en `--alto-tarjeta`, para que el numero
+    // quede junto al bloque al que pertenece y no escondido aqui.
+    min-height: var(--alto-tarjeta, auto)
   &:active, &:focus, &:hover
     background-color: $color-2-vc
     *
@@ -446,3 +453,17 @@ i.color-acento-contenido
   background-image: url(../assets/curso/temas/t4/banda-5.png)
 .banda-6
   background-image: url(../assets/curso/temas/t4/banda-6.png)
+
+// Banda #F2FCFF de 1328x46 tras la lista del 5.1. Es una franja FINA dentro de una caja de
+// 230: no se estira al alto del bloque como las del tema 4, se centra.
+.banda-7
+  background-image: url(../assets/curso/temas/t5/banda-7.png)
+  background-repeat: no-repeat
+  background-size: 100% auto
+  background-position: center
+  margin-inline: -3rem
+  padding: 1.5rem 3rem
+  @media (max-width: $bp-max-md)
+    margin-inline: 0
+    padding-inline: 0
+    background-image: none

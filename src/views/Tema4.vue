@@ -98,7 +98,7 @@
     //- (tarjeta #CDE6F6, círculo #EBE9FB). Muestreado en el PDF, no en la ficha.
     .row.no-pointer.mt-4(data-aos="fade-up")
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -107,7 +107,7 @@
           p.text-center.mb-0
             b La misión que declara
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -116,7 +116,7 @@
           p.text-center.mb-0
             b Los objetivos que persigue
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -125,7 +125,7 @@
           p.text-center.mb-0
             b Los criterios con que invierte
       .col-md-6.col-lg-3
-        .tarjeta--boton.color-1.p-4.h-100
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
