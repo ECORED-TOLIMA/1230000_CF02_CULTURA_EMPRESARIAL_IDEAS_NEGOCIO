@@ -376,3 +376,16 @@ figcaption
     margin-top: 60px !important
     width: 84px !important
 
+
+// Banda decorativa tras las dos tarjetas del 1.3 (1328x443 en 136,6499): es el ancho completo
+// de la tarjeta, o sea 3 rem por fuera del padding del contenido.
+.banda-1
+  background-image: url(../assets/curso/temas/t1/banda-1.png)
+  background-repeat: no-repeat
+  background-size: 100% 100%
+  margin-inline: -3rem
+  padding: 3rem
+  @media (max-width: $bp-max-md)
+    margin-inline: 0
+    padding: 0
+    background-image: none
