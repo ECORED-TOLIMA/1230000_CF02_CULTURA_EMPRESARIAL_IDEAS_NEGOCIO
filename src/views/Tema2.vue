@@ -276,7 +276,7 @@
       .col-md-2.col-lg-2.mb-4.mb-md-0
         .bg-1.r-20.p-3.text-center
           p.text-center.mb-2 se conectan
-          i.fas.fa-arrows-left-right.fa-lg.color-acento-contenido
+          img(src="@/assets/curso/temas/t2/1.svg" alt="").m-auto
       .col-10.col-md-5.col-lg-4(data-aos="fade-left")
         .tarjeta-avatar
           img(src="@/assets/curso/temas/t2/fam-2.svg" alt="").m-auto
@@ -408,20 +408,22 @@
 
     .row.justify-content-center.mt-4
       .col-lg-10
-        ImagenInfografica.color-acento-botones(data-aos="fade-up")
+        ImagenInfografica.color-acento-botones.d-none.d-md-block(data-aos="fade-up")
           template(v-slot:imagen)
             figure
               img(src="@/assets/curso/temas/t2/infografia-1.svg" alt="Los cinco sesgos más frecuentes en innovación: confirmación de lo que ya se cree, exceso de confianza, anclaje en la primera cifra, costo hundido y disponibilidad de lo reciente.").w-100
-          .tarjeta.color-primario.p-3(x="30%" y="49%" numero="+")
+          .tarjeta.color-primario.p-3(x="23%" y="44%" numero="+")
             p.mb-0 #[b Confirmación de lo que ya se cree:] se busca y se recuerda la información que respalda la opción preferida y se descarta la que la contradice.
-          .tarjeta.color-primario.p-3(x="37.5%" y="64%" numero="+")
+          .tarjeta.color-primario.p-3(x="33%" y="70%" numero="+")
             p.mb-0 #[b Exceso de confianza:] se sobreestima la capacidad propia y la demanda del mercado, con lo que se subestiman los plazos y los costos.
-          .tarjeta.color-primario.p-3(x="51%" y="76%" numero="+")
+          .tarjeta.color-primario.p-3(x="50%" y="90%" numero="+")
             p.mb-0 #[b Anclaje en la primera cifra:] la primera cifra conocida condiciona todas las estimaciones posteriores, aunque carezca de fundamento.
-          .tarjeta.color-primario.p-3(x="65%" y="64%" numero="+")
+          .tarjeta.color-primario.p-3(x="67%" y="70%" numero="+")
             p.mb-0 #[b Costo hundido:] se persiste en una decisión por lo ya invertido, en lugar de valorar lo que falta por invertir.
-          .tarjeta.color-primario.p-3(x="72%" y="49%" numero="+")
+          .tarjeta.color-primario.p-3(x="78%" y="44%" numero="+")
             p.mb-0 #[b Disponibilidad de lo reciente:] se juzga probable aquello que se recuerda con facilidad, como un caso reciente o cercano.
+        figure.d-md-none
+          img(src="@/assets/curso/temas/t2/infografia-m.svg" alt="").w-100
 
     .row.mt-4
       .col-lg-3.mb-4.mb-lg-0
@@ -454,15 +456,19 @@
 
     p.mt-4(data-aos="fade-right") Las cuatro prácticas comparten un mismo principio, que consiste en introducir un criterio distinto antes de cerrar la decisión. No garantizan un acierto, pero evitan que el análisis se convierta en una justificación elaborada de lo que ya estaba resuelto de antemano.
 
-    //- Foto de 503x359 en (290,9575) y franja #F0F49D de 1020x356 con el icono de 80 dentro.
-    .row.justify-content-center.mt-4
+    .row.align-items-center.justify-content-center
       .col-lg-10
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="fade-up")
-          .bloque-texto-g__img(:style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/t2/foto-9.png')})` }")
-          .bloque-texto-g__texto.p-4
-            figure.mb-3
-              img(src="@/assets/curso/temas/t2/ic-6.svg" style="width: 80px")
-            p.mb-0 Con los criterios definidos y los desvíos controlados, resta el paso que da sentido a todo el ejercicio, que es convertir el resultado en un argumento que otros puedan revisar. Un puntaje sin explicación obliga a rehacer el análisis cada vez que alguien lo cuestiona, mientras que una conclusión escrita permite discutir un punto sin desmontar los demás. Esos elementos, y el orden en que se presentan, constituyen el último contenido del tema.
+        .row.justify-content-center.mt-4
+          .col-lg-12(data-aos="fade-down")
+            .row.d-flex.align-items-center.bg-podcast(data-aos="fade-right")
+              .col-lg-auto.pe-lg-0.mb-4.mb-xl-0.d-flex.d-none.d-lg-block
+                figure.m-0.p-0.w-100.h-100.d-flex
+                  img(src='@/assets/curso/temas/t2/2.png', alt='', class="w-100 h-100 object-fit-cover", style="margin-left:-10px")
+              .col-lg
+                figure.mb-3
+                  img(src="@/assets/curso/temas/t2/ic-6.svg" style="width: 80px")
+                p.mt-2 Con los criterios definidos y los desvíos controlados, resta el paso que da sentido a todo el ejercicio, que es convertir el resultado en un argumento que otros puedan revisar. Un puntaje sin explicación obliga a rehacer el análisis cada vez que alguien lo cuestiona, mientras que una conclusión escrita permite discutir un punto sin desmontar los demás. Esos elementos, y el orden en que se presentan, constituyen el último contenido del tema.
+
 
     separador
     #t_2_5.titulo-segundo.color-acento-contenido

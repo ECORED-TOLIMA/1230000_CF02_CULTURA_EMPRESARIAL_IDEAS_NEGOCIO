@@ -185,17 +185,21 @@
 
     .row.justify-content-center.mt-4
       .col-lg-10
-        AcordionA(tipo="b" clase-tarjeta="tarjeta bg-4 r-20")
+        AcordionA.acordion--principios(tipo="b")
           div(titulo="Innovación de producto")
-            p.mb-0 Desarrollo de un bien o de un servicio con características nuevas o mejoradas de forma sustancial, sea en su función, en su calidad o en su presentación. #[b Ejemplo:] una empresa de lácteos de Sopó incorpora un yogur sin azúcar añadido dirigido a consumidores que restringen ese consumo, con lo que atiende un segmento que antes compraba producto importado.
+            p Desarrollo de un bien o de un servicio con características nuevas o mejoradas de forma sustancial, sea en su función, en su calidad o en su presentación. 
+            p #[b Ejemplo:] una empresa de lácteos de Sopó incorpora un yogur sin azúcar añadido dirigido a consumidores que restringen ese consumo, con lo que atiende un segmento que antes compraba producto importado.
           div(titulo="Innovación de proceso")
-            p.mb-0 Adopción de un método de producción, de logística o de distribución distinto del que la empresa venía empleando, con el fin de reducir costos, tiempos o variabilidad. #[b Ejemplo:] un taller de confección de Medellín reorganiza el flujo de corte y ensamble en células de trabajo y recorta el plazo de entrega de quince a nueve días.
+            p Adopción de un método de producción, de logística o de distribución distinto del que la empresa venía empleando, con el fin de reducir costos, tiempos o variabilidad. #[b Ejemplo:] un taller de confección de Medellín reorganiza el flujo de corte y ensamble en células de trabajo y recorta el plazo de entrega de quince a nueve días.
           div(titulo="Innovación en el modelo de negocio")
-            p.mb-0 Redefinición de la manera en que la organización crea, entrega y captura valor, lo que puede alterar el canal, el esquema de cobro o el segmento atendido. #[b Ejemplo:] una editorial de Bucaramanga sustituye la venta por unidad por una suscripción anual, con lo que asegura ingresos recurrentes y reduce el inventario en bodega.
+            p Redefinición de la manera en que la organización crea, entrega y captura valor, lo que puede alterar el canal, el esquema de cobro o el segmento atendido. 
+            p #[b Ejemplo:] una editorial de Bucaramanga sustituye la venta por unidad por una suscripción anual, con lo que asegura ingresos recurrentes y reduce el inventario en bodega.
           div(titulo="Innovación organizacional")
-            p.mb-0 Introducción de prácticas de gestión, formas de organizar el trabajo o modos de relación externa que la empresa no aplicaba. #[b Ejemplo:] una comercializadora de Barranquilla implementa reuniones diarias de quince minutos entre bodega y ventas, con lo que disminuyen los pedidos incompletos y las devoluciones.
+            p Introducción de prácticas de gestión, formas de organizar el trabajo o modos de relación externa que la empresa no aplicaba. 
+            p #[b Ejemplo:] una comercializadora de Barranquilla implementa reuniones diarias de quince minutos entre bodega y ventas, con lo que disminuyen los pedidos incompletos y las devoluciones.
           div(titulo="Innovación social")
-            p.mb-0 Solución original a un problema colectivo que ni el mercado ni el Estado atienden de manera suficiente, sostenida con un modelo económico viable. #[b Ejemplo:] una asociación de recicladores de Cali estructura una ruta de recolección selectiva con empresas del sector, con lo que formaliza el ingreso de sus integrantes.
+            p Solución original a un problema colectivo que ni el mercado ni el Estado atienden de manera suficiente, sostenida con un modelo económico viable. 
+            p #[b Ejemplo:] una asociación de recicladores de Cali estructura una ruta de recolección selectiva con empresas del sector, con lo que formaliza el ingreso de sus integrantes.
 
     p.mt-4(data-aos="fade-right") Los cinco ámbitos no son excluyentes y con frecuencia se encadenan, pues un cambio en el proceso habilita un producto nuevo, y ese producto obliga a revisar el canal por el que se vende. Lo que la organización debe evitar es declarar innovación en todos los frentes a la vez, porque dispersa los recursos y ninguno alcanza el punto en que produce un resultado medible.
 
@@ -299,12 +303,16 @@
     p(data-aos="fade-right") La siguiente figura reúne ese contraste en los cuatro criterios que intervienen en la decisión y facilita compararlos antes de comprometer recursos:
 
     .row.justify-content-center.mt-4
-      .col-lg-11
+      .col-lg-10
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Figura 1.
           span  Innovación incremental frente a innovación disruptiva
-        figure.mb-0(data-aos="fade-up")
-          img(src="@/assets/curso/temas/t1/figura-1.svg" alt="Comparación de la innovación incremental y la disruptiva en cuatro criterios: alcance del cambio, riesgo, horizonte de retorno y condición para emprenderla.").w-100
+        figure.mb-0.d-none.d-md-block(data-aos="fade-up")
+          img(src="@/assets/curso/temas/t1/figura-1.svg" alt="En la figura 1 se presenta una comparativa de cuatro criterios: alcance, riesgo, horizonte y condición. La incremental mejora lo existente con riesgo bajo; la disruptiva transforma el mercado con riesgo alto. Ninguna ruta es mejor: dependen del contexto. ").w-100
+        figure.mb-0.d-md-none
+          img(src="@/assets/curso/temas/t1/figura-1-m.svg" alt="En la figura 1 se presenta una comparativa de cuatro criterios: alcance, riesgo, horizonte y condición. La incremental mejora lo existente con riesgo bajo; la disruptiva transforma el mercado con riesgo alto. Ninguna ruta es mejor: dependen del contexto. ").w-100
+
+
 
     .row.justify-content-center.mt-4
       .col-lg-10
@@ -317,15 +325,19 @@
 
     p.mt-4(data-aos="fade-right") Colombia cuenta con una institucionalidad dedicada a promover la innovación empresarial. Su norma marco es la Ley 1286 de 2009, que fortaleció el Sistema Nacional de Ciencia, Tecnología e Innovación y elevó a Colciencias a la categoría de departamento administrativo; una década después, la Ley 1951 de 2019 creó el Ministerio de Ciencia, Tecnología e Innovación. Desde entonces la política se despliega mediante planes nacionales, convocatorias de financiación y programas de acompañamiento técnico dirigidos a empresas de distinto tamaño.
 
-    //- Foto de 506x358 en (289,8574) y franja #F0F49D de 1020x358 con el icono de 80 dentro.
-    .row.justify-content-center.mt-4
+    .row.align-items-center.justify-content-center
       .col-lg-10
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="fade-up")
-          .bloque-texto-g__img(:style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/t1/foto-7.png')})` }")
-          .bloque-texto-g__texto.p-4
-            figure.mb-3
-              img(src="@/assets/curso/temas/t1/ic-5.svg" style="width: 80px")
-            p.mb-0 Ahora bien, la ejecución no ocurre únicamente en el nivel nacional. Las Comisiones Regionales de Competitividad, presentes en los treinta y dos departamentos, traducen las prioridades nacionales a las apuestas productivas de cada territorio. Consultar la agenda departamental antes de formular una propuesta permite alinearla con las cadenas que ya cuentan con recursos asignados, lo que eleva de manera considerable su probabilidad de apoyo.
+        .row.justify-content-center.mt-4
+          .col-lg-12(data-aos="fade-down")
+            .row.d-flex.align-items-center.bg-podcast(data-aos="fade-right")
+              .col-lg-auto.pe-lg-0.mb-4.mb-xl-0.d-flex.d-none.d-lg-block
+                figure.m-0.p-0.w-100.h-100.d-flex
+                  img(src='@/assets/curso/temas/t1/1.png', alt='', class="w-100 h-100 object-fit-cover", style="margin-left:-10px")
+              .col-lg
+                figure
+                  img(src="@/assets/curso/temas/t1/ic-5.svg" style="width: 80px")
+
+                p.mt-2 Ahora bien, la ejecución no ocurre únicamente en el nivel nacional. Las Comisiones Regionales de Competitividad, presentes en los treinta y dos departamentos, traducen las prioridades nacionales a las apuestas productivas de cada territorio. Consultar la agenda departamental antes de formular una propuesta permite alinearla con las cadenas que ya cuentan con recursos asignados, lo que eleva de manera considerable su probabilidad de apoyo.
 
     p.mt-4(data-aos="fade-right") El apoyo público no se limita a la entrega de recursos. Buena parte de la oferta consiste en cuatro servicios que la empresa puede solicitar desde el comienzo del proyecto:
 

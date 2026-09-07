@@ -124,15 +124,19 @@
 
     p.mt-4(data-aos="fade-right") La expresión problema tecnológico suele asociarse a maquinaria costosa, cuando en la práctica designa cualquier limitación de los medios técnicos con los que la empresa produce. Un cuaderno donde se registran los pedidos, una máquina que falla cada semana o dos sistemas que guardan la misma información por separado son problemas tecnológicos, y ninguno exige una inversión mayor para resolverse.
 
-    //- Foto de 506x317 y franja #F0F49D de 1020x317 con el icono de 80 dentro del texto.
-    .row.justify-content-center.mt-4
+    .row.align-items-center.justify-content-center
       .col-lg-10
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="fade-up")
-          .bloque-texto-g__img(:style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/t3/foto-4.png')})` }")
-          .bloque-texto-g__texto.p-4
-            figure.mb-3
-              img(src="@/assets/curso/temas/t3/ic-4.svg" style="width: 80px")
-            p.mb-0 Identificarlos con precisión importa porque de esa identificación depende la propuesta. Una empresa que atribuye sus reprocesos a la falta de personal invertirá en contratar, cuando la causa podía estar en la ausencia de una ficha de control de calidad. El diagnóstico equivocado convierte una inversión razonable en un gasto que no resuelve nada.
+        .row.justify-content-center.mt-4
+          .col-lg-12(data-aos="fade-down")
+            .row.d-flex.align-items-center.bg-podcast(data-aos="fade-right")
+              .col-lg-auto.pe-lg-0.mb-4.mb-xl-0.d-flex.d-none.d-lg-block
+                figure.m-0.p-0.w-100.h-100.d-flex
+                  img(src='@/assets/curso/temas/t3/1.png', alt='', class="w-100 h-100 object-fit-cover", style="margin-left:-10px")
+              .col-lg
+                figure.mb-3
+                  img(src="@/assets/curso/temas/t3/ic-4.svg" style="width: 80px")
+                p.mt-2 Identificarlos con precisión importa porque de esa identificación depende la propuesta. Una empresa que atribuye sus reprocesos a la falta de personal invertirá en contratar, cuando la causa podía estar en la ausencia de una ficha de control de calidad. El diagnóstico equivocado convierte una inversión razonable en un gasto que no resuelve nada.
+
 
     .row.align-items-start.mt-4(data-aos="fade-right")
       .col-12.col-md-auto.mb-3.mb-md-0
@@ -207,7 +211,7 @@
 
     .row.justify-content-center.mt-4
       .col-lg-10
-        AcordionA(tipo="b" clase-tarjeta="tarjeta bg-4 r-20")
+        AcordionA.acordion--principios(tipo="b")
           div(titulo="<em>Lean manufacturing</em>")
             p.mb-0 Sistema orientado a eliminar todo aquello que el cliente no está dispuesto a pagar, definido como desperdicio. Clasifica las pérdidas en categorías como la sobreproducción, la espera, el transporte innecesario y el reproceso. #[b Aplicación:] recorrer el proceso con el equipo y marcar en el diagrama cada actividad que no agrega valor al producto final.
           div(titulo="<em>Kaizen</em>")
@@ -260,13 +264,18 @@
           p.mb-0 La quinta fase explica por qué muchas empresas ordenan su planta una vez y regresan al desorden en tres meses. Las cuatro primeras se resuelven con esfuerzo concentrado; la última exige una rutina sostenida, y sin ella el trabajo invertido se pierde.
         p.mt-4.mb-0(data-aos="fade-left") En la siguiente figura se presenta el ciclo con que se sostiene esa rutina, con la acción concreta que corresponde a cada una de sus cuatro fases. Permite reconocer en qué momento interviene la medición y por qué sin ella el recorrido no puede completarse:
 
+
+
     .row.justify-content-center.mt-4
-      .col-lg-11
+      .col-lg-10
         .titulo-sexto.color-acento-contenido.mb-3
           h5 Figura 2.
           span  Ciclo de mejora continua aplicado al proceso productivo
-        figure.mb-0(data-aos="fade-up")
-          img(src="@/assets/curso/temas/t3/figura-2.svg" alt="Ciclo de mejora continua en cuatro fases: planear, hacer, verificar y actuar, con la acción que corresponde a cada una.").w-100
+        figure.mb-0.d-none.d-md-block(data-aos="fade-up")
+          img(src="@/assets/curso/temas/t3/figura-2.svg" alt="En la figura 2 se presenta un objeto circular que muestra cómo las fases planear, hacer, verificar y actuar se articulan para probar cambios, evaluar resultados, corregir desviaciones y mejorar continuamente el desempeño, la eficiencia y la calidad del proceso productivo. ").w-100
+        figure.mb-0.d-md-none
+          img(src="@/assets/curso/temas/t3/figura-2-m.svg" alt="En la figura 2 se presenta un objeto circular que muestra cómo las fases planear, hacer, verificar y actuar se articulan para probar cambios, evaluar resultados, corregir desviaciones y mejorar continuamente el desempeño, la eficiencia y la calidad del proceso productivo. ").w-100
+
 
     //- La pestaña de 25x8 en (186,7314) marca este bloque como `.cajon`.
     .row.mt-4
@@ -278,15 +287,6 @@
         figure.mb-0.h-100
           img(src="@/assets/curso/temas/t3/foto-6.png").w-100.h-100.object-fit-cover.r-10
 
-    //- El XD nombra el recurso de audio en el texto pero no dibuja el componente: se maqueta
-    //- con la `TarjetaAudio` del kit y queda anotado en los pendientes que falta la pista.
-    .row.justify-content-center.mt-4
-      .col-lg-10
-        .p-4.bg-podcast
-          TarjetaAudio.color-acento-botones.mb-0(
-            texto="Herramientas de mejora continua: cuando el problema no es la máquina."
-            :audio="require_src('@/assets/curso/temas/t3/podcast.mp3')"
-          )
 
     p.mt-4(data-aos="fade-right") Revisado el recurso, resulta útil recorrer la operación de una empresa conocida e identificar los tres o cuatro puntos donde el tiempo se pierde sin que nadie lo registre. Ese ejercicio deja una pregunta abierta, la de cómo comprobar que la intervención produjo el efecto esperado. Sin esa comprobación la mejora queda como una impresión compartida por el equipo, insuficiente para sustentar una propuesta ante un banco o ante un evaluador de convocatoria.
 

@@ -32,31 +32,33 @@
         figure.mb-0
           img(src="@/assets/curso/temas/t4/ilus-1.png").w-100
 
-    //- Lista #FED9FF de 1020x391 sobre la banda decorativa #F2F9FD de 1328x377.
-    .banda-4.mt-4
-      .row.justify-content-center
-        .col-lg-10
-          .bg-3.r-10.p-4(data-aos="fade-up")
-            ul.lista-ul.mb-0
-              li
-                i.far.fa-circle-dot
-                | #[b Estructura de la propuesta de innovación:] los componentes que debe contener el documento y el orden en que conviene redactarlos para que el conjunto resulte coherente.
-              li
-                i.far.fa-circle-dot
-                | #[b Lienzo del modelo de negocio:] la herramienta que resume en una sola página cómo la organización crea, entrega y captura valor con la solución propuesta.
-              li
-                i.far.fa-circle-dot
-                | #[b Propuesta de valor diferenciada:] la manera de enunciar por qué el cliente debe preferir esta solución y no las que ya existen en el mercado.
-              li
-                i.far.fa-circle-dot
-                | #[b Instrumentos de apoyo y financiación:] las fuentes disponibles en el país, sus requisitos de acceso y el tipo de proyecto al que se ajusta cada una.
-              li.mb-0
-                i.far.fa-circle-dot
-                | #[b Presentación del proyecto ante audiencias:] cómo se expone la propuesta en distintos formatos y qué examinan quienes deciden sobre ella.
+    .row.justify-content-center.mt-4
+      .col-lg-10
+        .bg-3.r-10.p-4(data-aos="fade-up")
+          ul.lista-ul.mb-0
+            li
+              i.far.fa-circle-dot
+              | #[b Estructura de la propuesta de innovación:] los componentes que debe contener el documento y el orden en que conviene redactarlos para que el conjunto resulte coherente.
+            li
+              i.far.fa-circle-dot
+              | #[b Lienzo del modelo de negocio:] la herramienta que resume en una sola página cómo la organización crea, entrega y captura valor con la solución propuesta.
+            li
+              i.far.fa-circle-dot
+              | #[b Propuesta de valor diferenciada:] la manera de enunciar por qué el cliente debe preferir esta solución y no las que ya existen en el mercado.
+            li
+              i.far.fa-circle-dot
+              | #[b Instrumentos de apoyo y financiación:] las fuentes disponibles en el país, sus requisitos de acceso y el tipo de proyecto al que se ajusta cada una.
+            li.mb-0
+              i.far.fa-circle-dot
+              | #[b Presentación del proyecto ante audiencias:] cómo se expone la propuesta en distintos formatos y qué examinan quienes deciden sobre ella.
 
+
+    
     p.mt-4(data-aos="fade-right") Los cinco contenidos siguen el mismo orden en que se construye un proyecto real, pues primero se estructura, luego se modela, después se argumenta el valor, enseguida se busca la fuente y, por último, se sustenta ante quien decide. Alterar ese orden suele producir propuestas que describen bien la solución, pero no explican para quién es.
 
     p(data-aos="fade-right") El diagnóstico del proceso, la alternativa elegida y sus indicadores ya existen. Ordenar ese material antes de escribir define la forma que tomará el documento y el lugar de cada parte.
+
+    
 
     separador
     #t_4_1.titulo-segundo.color-acento-contenido
@@ -98,7 +100,7 @@
     //- (tarjeta #CDE6F6, círculo #EBE9FB). Muestreado en el PDF, no en la ficha.
     .row.no-pointer.mt-4(data-aos="fade-up")
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 292px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -107,7 +109,7 @@
           p.text-center.mb-0
             b La misión que declara
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 292px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -116,7 +118,7 @@
           p.text-center.mb-0
             b Los objetivos que persigue
       .col-md-6.col-lg-3.mb-4.mb-lg-0
-        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 292px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -125,7 +127,7 @@
           p.text-center.mb-0
             b Los criterios con que invierte
       .col-md-6.col-lg-3
-        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 426px")
+        .tarjeta--boton.color-1.p-4.h-100(style="--alto-tarjeta: 292px")
           .row.justify-content-center.mb-3
             .col-7
               figure.mb-0
@@ -298,39 +300,38 @@
 
     p.mt-4(data-aos="fade-right") Cada bloque responde una pregunta distinta sobre el negocio, y ninguno se sostiene por separado. Estos son los nueve que componen el lienzo:
 
-    //- Lista #FED9FF de 1020x479 sobre la banda decorativa #F2F9FD de 1328x460.
-    .banda-5.mt-4
-      .row.justify-content-center
-        .col-lg-10
-          .bg-3.r-10.p-4(data-aos="fade-up")
-            ul.lista-ul.mb-0
-              li
-                i.far.fa-circle-dot
-                | #[b Segmentos de clientes:] los grupos de personas u organizaciones a los que la propuesta se dirige, definidos por su necesidad común.
-              li
-                i.far.fa-circle-dot
-                | #[b Propuesta de valor:] el conjunto de beneficios que resuelven el problema del cliente mejor que las opciones disponibles.
-              li
-                i.far.fa-circle-dot
-                | #[b Canales:] los medios por los que la propuesta llega al cliente, desde el primer contacto hasta la entrega y el servicio posterior.
-              li
-                i.far.fa-circle-dot
-                | #[b Relación con los clientes:] el tipo de vínculo que se establece con cada segmento, sea personal, automatizado o mediado por una comunidad.
-              li
-                i.far.fa-circle-dot
-                | #[b Fuentes de ingreso:] las formas en que el cliente paga, incluidas la venta directa, la suscripción, el arrendamiento y la comisión.
-              li
-                i.far.fa-circle-dot
-                | #[b Recursos clave:] los activos indispensables para operar ya sean físicos, humanos, financieros o de conocimiento.
-              li
-                i.far.fa-circle-dot
-                | #[b Actividades clave:] las acciones que la organización debe realizar bien para que la propuesta de valor se cumpla.
-              li
-                i.far.fa-circle-dot
-                | #[b Aliados clave:] los proveedores y socios que aportan lo que la organización no puede o no le conviene hacer por sí misma.
-              li.mb-0
-                i.far.fa-circle-dot
-                | #[b Estructura de costos:] los desembolsos que genera la operación del modelo, con distinción entre los fijos y los variables.
+
+    .row.justify-content-center.mt-4
+      .col-lg-10
+        .bg-3.r-10.p-4(data-aos="fade-up")
+          ul.lista-ul.mb-0
+            li
+              i.far.fa-circle-dot
+              | #[b Segmentos de clientes:] los grupos de personas u organizaciones a los que la propuesta se dirige, definidos por su necesidad común.
+            li
+              i.far.fa-circle-dot
+              | #[b Propuesta de valor:] el conjunto de beneficios que resuelven el problema del cliente mejor que las opciones disponibles.
+            li
+              i.far.fa-circle-dot
+              | #[b Canales:] los medios por los que la propuesta llega al cliente, desde el primer contacto hasta la entrega y el servicio posterior.
+            li
+              i.far.fa-circle-dot
+              | #[b Relación con los clientes:] el tipo de vínculo que se establece con cada segmento, sea personal, automatizado o mediado por una comunidad.
+            li
+              i.far.fa-circle-dot
+              | #[b Fuentes de ingreso:] las formas en que el cliente paga, incluidas la venta directa, la suscripción, el arrendamiento y la comisión.
+            li
+              i.far.fa-circle-dot
+              | #[b Recursos clave:] los activos indispensables para operar ya sean físicos, humanos, financieros o de conocimiento.
+            li
+              i.far.fa-circle-dot
+              | #[b Actividades clave:] las acciones que la organización debe realizar bien para que la propuesta de valor se cumpla.
+            li
+              i.far.fa-circle-dot
+              | #[b Aliados clave:] los proveedores y socios que aportan lo que la organización no puede o no le conviene hacer por sí misma.
+            li.mb-0
+              i.far.fa-circle-dot
+              | #[b Estructura de costos:] los desembolsos que genera la operación del modelo, con distinción entre los fijos y los variables.
 
     p.mt-4(data-aos="fade-right") Los nueve bloques no tienen el mismo peso. Un lienzo con canales bien pensados y una propuesta de valor imprecisa describe cómo se venderá algo que todavía no se sabe por qué alguien compraría.
 
@@ -644,32 +645,32 @@
     p.mt-4(data-aos="fade-right") La estructura que mejor funciona en una exposición breve no improvisa el orden. Siete pasos, en esta secuencia, permiten que cada idea prepare la siguiente:
 
     //- Lista #FED9FF de 1020x370 sobre la banda decorativa #F2F9FD de 1328x342.
-    .banda-6.mt-4
-      .row.justify-content-center
-        .col-lg-10
-          .bg-3.r-10.p-4(data-aos="fade-up")
-            ul.lista-ul.mb-0
-              li
-                i.far.fa-circle-dot
-                | #[b Problema:] se enuncia con una situación concreta y una cifra que muestre su magnitud, de modo que quien la recibe reconozca que existe.
-              li
-                i.far.fa-circle-dot
-                | #[b Solución:] se describe en una frase qué hace la propuesta y sobre qué parte del problema actúa, sin detalle técnico.
-              li
-                i.far.fa-circle-dot
-                | #[b Mercado:] se dimensiona a quién alcanza la propuesta, con una cifra que permita calcular el tamaño de la oportunidad.
-              li
-                i.far.fa-circle-dot
-                | #[b Modelo de ingreso:] se explica cómo entra el dinero y en qué momento el proyecto cubre sus propios costos.
-              li
-                i.far.fa-circle-dot
-                | #[b Equipo:] se señala qué hace competente a quienes ejecutarán la propuesta, con hechos y no con adjetivos.
-              li
-                i.far.fa-circle-dot
-                | #[b Resultado esperado:] se presenta la cifra que la propuesta se compromete a alcanzar y el plazo en que lo hará.
-              li.mb-0
-                i.far.fa-circle-dot
-                | #[b Solicitud:] se precisa qué se pide, sea dinero, aval, contacto o acompañamiento, y para qué se destinará.
+
+    .row.justify-content-center.mt-4
+      .col-lg-10
+        .bg-3.r-10.p-4(data-aos="fade-up")
+          ul.lista-ul.mb-0
+            li
+              i.far.fa-circle-dot
+              | #[b Problema:] se enuncia con una situación concreta y una cifra que muestre su magnitud, de modo que quien la recibe reconozca que existe.
+            li
+              i.far.fa-circle-dot
+              | #[b Solución:] se describe en una frase qué hace la propuesta y sobre qué parte del problema actúa, sin detalle técnico.
+            li
+              i.far.fa-circle-dot
+              | #[b Mercado:] se dimensiona a quién alcanza la propuesta, con una cifra que permita calcular el tamaño de la oportunidad.
+            li
+              i.far.fa-circle-dot
+              | #[b Modelo de ingreso:] se explica cómo entra el dinero y en qué momento el proyecto cubre sus propios costos.
+            li
+              i.far.fa-circle-dot
+              | #[b Equipo:] se señala qué hace competente a quienes ejecutarán la propuesta, con hechos y no con adjetivos.
+            li
+              i.far.fa-circle-dot
+              | #[b Resultado esperado:] se presenta la cifra que la propuesta se compromete a alcanzar y el plazo en que lo hará.
+            li.mb-0
+              i.far.fa-circle-dot
+              | #[b Solicitud:] se precisa qué se pide, sea dinero, aval, contacto o acompañamiento, y para qué se destinará.
 
     p.mt-4(data-aos="fade-right") Los siete pasos no se distribuyen por igual. El problema y la solución ocupan la mitad del tiempo disponible, porque si quien la recibe no comprende qué se resuelve, el resto de la información no encuentra dónde asentarse.
 
@@ -751,15 +752,19 @@
 
     p.mt-4(data-aos="fade-right") Las cuatro herramientas cumplen una función auxiliar. Ninguna sustituye la preparación del contenido, aunque todas amplían el alcance de una propuesta cuando el equipo no dispone de presupuesto para producir materiales.
 
-    //- Foto de 506x376 y franja #F0F49D de 1020x376 con el icono de 80 dentro del texto.
-    .row.justify-content-center.mt-4
+    .row.align-items-center.justify-content-center
       .col-lg-10
-        .bloque-texto-g.color-primario.p-3.p-sm-4.p-md-5(data-aos="fade-up")
-          .bloque-texto-g__img(:style="{ backgroundImage: `url(${require_src('@/assets/curso/temas/t4/foto-8.png')})` }")
-          .bloque-texto-g__texto.p-4
-            figure.mb-3
-              img(src="@/assets/curso/temas/t4/ic-9.svg" style="width: 80px")
-            p.mb-0 Con la propuesta formulada, financiada y expuesta, resta examinar cómo se combinan todos estos elementos en situaciones concretas. Los conceptos desarrollados hasta aquí adquieren su sentido pleno cuando se aplican sobre una empresa con nombre, con cifras y con restricciones reales, porque allí se advierte qué parte del método resulta indispensable. El tema final reúne cuatro casos del contexto colombiano que recorren esa secuencia en sectores y regiones distintos.
+        .row.justify-content-center.mt-4
+          .col-lg-12(data-aos="fade-down")
+            .row.d-flex.align-items-center.bg-podcast(data-aos="fade-right")
+              .col-lg-auto.pe-lg-0.mb-4.mb-xl-0.d-flex.d-none.d-lg-block
+                figure.m-0.p-0.w-100.h-100.d-flex
+                  img(src='@/assets/curso/temas/t4/1.png', alt='', class="w-100 h-100 object-fit-cover", style="margin-left:-10px")
+              .col-lg
+                figure.mb-3
+                  img(src="@/assets/curso/temas/t4/ic-9.svg" style="width: 80px")
+                p.mt-2 Con la propuesta formulada, financiada y expuesta, resta examinar cómo se combinan todos estos elementos en situaciones concretas. Los conceptos desarrollados hasta aquí adquieren su sentido pleno cuando se aplican sobre una empresa con nombre, con cifras y con restricciones reales, porque allí se advierte qué parte del método resulta indispensable. El tema final reúne cuatro casos del contexto colombiano que recorren esa secuencia en sectores y regiones distintos.
+
 
 </template>
 
