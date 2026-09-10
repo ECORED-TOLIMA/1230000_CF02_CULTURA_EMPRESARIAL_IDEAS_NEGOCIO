@@ -190,7 +190,8 @@
             p Desarrollo de un bien o de un servicio con características nuevas o mejoradas de forma sustancial, sea en su función, en su calidad o en su presentación. 
             p #[b Ejemplo:] una empresa de lácteos de Sopó incorpora un yogur sin azúcar añadido dirigido a consumidores que restringen ese consumo, con lo que atiende un segmento que antes compraba producto importado.
           div(titulo="Innovación de proceso")
-            p Adopción de un método de producción, de logística o de distribución distinto del que la empresa venía empleando, con el fin de reducir costos, tiempos o variabilidad. #[b Ejemplo:] un taller de confección de Medellín reorganiza el flujo de corte y ensamble en células de trabajo y recorta el plazo de entrega de quince a nueve días.
+            p Adopción de un método de producción, de logística o de distribución distinto del que la empresa venía empleando, con el fin de reducir costos, tiempos o variabilidad. 
+            p #[b Ejemplo:] un taller de confección de Medellín reorganiza el flujo de corte y ensamble en células de trabajo y recorta el plazo de entrega de quince a nueve días.
           div(titulo="Innovación en el modelo de negocio")
             p Redefinición de la manera en que la organización crea, entrega y captura valor, lo que puede alterar el canal, el esquema de cobro o el segmento atendido. 
             p #[b Ejemplo:] una editorial de Bucaramanga sustituye la venta por unidad por una suscripción anual, con lo que asegura ingresos recurrentes y reduce el inventario en bodega.
@@ -263,7 +264,7 @@
       .col-lg-9.mb-4.mb-lg-0
         .cajon.color-1.p-4(data-aos="fade-right")
           p.mb-0 La distinción tiene efectos sobre la manera de administrar el proyecto. Una mejora acumulada se financia con el flujo corriente, se mide en meses y admite corrección sobre la marcha. Una apuesta de mayor alcance exige reservar recursos desde el comienzo, tolerar resultados nulos durante varios períodos y sostener la decisión frente a un equipo que no ve avances inmediatos.
-        p.mt-4.mb-0(data-aos="fade-right") La primera y la segunda de esas iniciativas constituyen dos rutas con nombre propio dentro de la gestión empresarial. Conviene examinarlas por separado antes de compararlas, pues tres rasgos bastan para reconocerlas, que son la forma en que el cambio avanza, el riesgo que compromete y el plazo en que la inversión regresa. Cada ruta se describe enseguida con un ejemplo:
+        p.mt-4.mb-0(data-aos="fade-right") La primera y la segunda de esas iniciativas constituyen dos rutas con nombre propio dentro de la gestión empresarial. Conviene examinarlas por separado antes de compararlas, pues tres rasgos bastan para reconocerlas: la forma en que el cambio avanza, el riesgo que compromete y el plazo en que la inversión regresa. Cada ruta se describe enseguida con un ejemplo:
       .col-lg-3
         figure.mb-0
           img(src="@/assets/curso/temas/t1/foto-6.png").w-100.r-10

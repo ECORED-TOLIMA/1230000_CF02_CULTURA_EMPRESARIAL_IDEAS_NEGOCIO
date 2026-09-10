@@ -413,15 +413,20 @@
             figure
               img(src="@/assets/curso/temas/t2/infografia-1.svg" alt="Los cinco sesgos más frecuentes en innovación: confirmación de lo que ya se cree, exceso de confianza, anclaje en la primera cifra, costo hundido y disponibilidad de lo reciente.").w-100
           .tarjeta.color-primario.p-3(x="23%" y="44%" numero="+")
-            p.mb-0 #[b Confirmación de lo que ya se cree:] se busca y se recuerda la información que respalda la opción preferida y se descarta la que la contradice.
+            p.mb-0 #[b Confirmación de lo que ya se cree:] 
+            p Se busca y se recuerda la información que respalda la opción preferida y se descarta la que la contradice.
           .tarjeta.color-primario.p-3(x="33%" y="70%" numero="+")
-            p.mb-0 #[b Exceso de confianza:] se sobreestima la capacidad propia y la demanda del mercado, con lo que se subestiman los plazos y los costos.
+            p.mb-0 #[b Exceso de confianza:] 
+            p Se sobreestima la capacidad propia y la demanda del mercado, con lo que se subestiman los plazos y los costos.
           .tarjeta.color-primario.p-3(x="50%" y="90%" numero="+")
-            p.mb-0 #[b Anclaje en la primera cifra:] la primera cifra conocida condiciona todas las estimaciones posteriores, aunque carezca de fundamento.
+            p.mb-0 #[b Anclaje en la primera cifra:] 
+            p La primera cifra conocida condiciona todas las estimaciones posteriores, aunque carezca de fundamento.
           .tarjeta.color-primario.p-3(x="67%" y="70%" numero="+")
-            p.mb-0 #[b Costo hundido:] se persiste en una decisión por lo ya invertido, en lugar de valorar lo que falta por invertir.
+            p.mb-0 #[b Costo hundido:] 
+            p Se persiste en una decisión por lo ya invertido, en lugar de valorar lo que falta por invertir.
           .tarjeta.color-primario.p-3(x="78%" y="44%" numero="+")
-            p.mb-0 #[b Disponibilidad de lo reciente:] se juzga probable aquello que se recuerda con facilidad, como un caso reciente o cercano.
+            p.mb-0 #[b Disponibilidad de lo reciente:] 
+            p Se juzga probable aquello que se recuerda con facilidad, como un caso reciente o cercano.
         figure.d-md-none
           img(src="@/assets/curso/temas/t2/infografia-m.svg" alt="").w-100
 
