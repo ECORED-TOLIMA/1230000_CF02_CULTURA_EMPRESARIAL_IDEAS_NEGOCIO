@@ -290,6 +290,23 @@
 
     p.mt-4(data-aos="fade-right") Revisado el recurso, resulta útil recorrer la operación de una empresa conocida e identificar los tres o cuatro puntos donde el tiempo se pierde sin que nadie lo registre. Ese ejercicio deja una pregunta abierta, la de cómo comprobar que la intervención produjo el efecto esperado. Sin esa comprobación la mejora queda como una impresión compartida por el equipo, insuficiente para sustentar una propuesta ante un banco o ante un evaluador de convocatoria.
 
+    p.p-4.bg-7 Con el propósito de fortalecer la comprensión de las herramientas de mejora continua, se presenta el siguiente recurso de audio. En este pódcast se explica cómo el lean manufacturing, el kaizen y las cinco eses ayudan a reconocer el desperdicio, ordenar la operación y sostener el cambio en el tiempo, sin necesidad de comprar equipos nuevos.
+
+    .row.justify-content-center.mt-4
+      .col-lg-10
+        figure.mb-0
+          img(src="@/assets/curso/temas/t3/3.svg").w-100
+        //- Dentro de la banda #F0F49D el XD dibuja una tarjeta BLANCA de 972x108 y, en ella,
+        //- la barra de 930x60.
+        .p-4.bg-podcast
+          .bg-white.r-20.p-4
+            TarjetaAudio.color-acento-botones.mb-0(
+              texto="Mejora continua: pequeños cambios que sostienen una empresa."
+              :audio="require_src('@/assets/curso/temas/t3/podcast.mp3')"
+            )
+
+    p.mt-4 Finalmente, la mejora continua no reemplaza la inversión, sino que la ordena: permite saber qué comprar y qué no. Su efecto solo se confirma cuando la empresa mide el proceso antes y después de intervenirlo. De esa medición se ocupan los indicadores de desempeño que se presentan a continuación.
+
     separador
     #t_3_4.titulo-segundo.color-acento-contenido
       h2 3.4 Indicadores de desempeño del proceso
