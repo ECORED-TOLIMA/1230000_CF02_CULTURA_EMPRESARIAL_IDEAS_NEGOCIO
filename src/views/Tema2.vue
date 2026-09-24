@@ -32,19 +32,19 @@
         LineaTiempoD.color-1(data-aos="fade-right")
           .row(numero="1" titulo="Generación de alternativas empresariales")
             .col-12
-              p.mb-0 Qué condiciones debe cumplir un conjunto de opciones y qué técnicas ayudan a ampliarlo antes de emitir cualquier juicio de valor sobre ellas. Se aplica cuando el equipo llega a la reunión con una sola propuesta sobre la mesa y necesita abrir el abanico antes de comprometer los recursos disponibles.
+              p.mb-0 Qué condiciones debe cumplir un conjunto de opciones y qué técnicas ayudan a ampliarlo antes de emitir cualquier juicio de valor sobre ellas. Se aplica cuando el equipo llega a la reunión con una sola propuesta sobre la mesa y necesita abrir el abanico antes de comprometer los recursos disponibles. 
           .row(numero="2" titulo="Matriz de ponderación de alternativas")
             .col-12
-              p.mb-0 La herramienta con que se comparan las opciones: los criterios que importan, el peso de cada uno y la calificación que ordena las alternativas dejando constancia de las razones.
+              p.mb-0 La herramienta que traduce criterios y pesos en un puntaje comparable, con la secuencia completa de su elaboración. Sirve cuando dos socios defienden opciones distintas y conviene poner por escrito cuánto pesa la rentabilidad frente al riesgo, antes de que ese desacuerdo se convierta en un conflicto abierto entre ambos. 
           .row(numero="3" titulo="Criterios cuantitativos y cualitativos")
             .col-12
-              p.mb-0 Las dos familias de criterios, la forma de valorar cada una y los siete factores que concentran la mayor parte de las decisiones de innovación.
+              p.mb-0 Qué se puede medir en cifras, qué debe valorarse con juicio y cómo se combinan ambos tipos sin que uno anule al otro. Explica por qué dos empresas del mismo sector eligen caminos distintos ante un problema idéntico, pues cada una pondera con las prioridades que su propia situación impone. 
           .row(numero="4" titulo="Sesgos que distorsionan la decisión")
             .col-12
-              p.mb-0 Los atajos mentales que desvían el juicio sin que quien decide lo advierta, y las prácticas que los contrarrestan sin exigir recursos adicionales.
+              p.mb-0 Los desvíos de razonamiento más frecuentes en el ámbito empresarial y las medidas concretas que reducen su efecto. Conviene revisarlos antes de calificar las alternativas y nunca después, porque un desvío detectado a tiempo se corrige sin costo, mientras que uno advertido al final obliga a rehacer todo el análisis. 
           .row(numero="5" titulo="Conclusión fundamentada")
             .col-12
-              p.mb-0 Cómo se convierte el puntaje en un argumento que otros puedan revisar, con la recomendación, sus razones, sus limitaciones y las condiciones que obligarían a reconsiderarla.
+              p.mb-0 Cómo se redacta el resultado del análisis para que otra persona pueda revisarlo y, si discrepa, señalar exactamente dónde. Se aplica al preparar el documento que acompaña una solicitud de crédito ante un banco, cuando el evaluador pregunta por qué razón fueron descartadas las demás opciones que se consideraron.
 
     //- Caja #FED9FF de 708x170 en (289,1192) y la ilustración de 292x170 a su derecha.
     .row.justify-content-center.align-items-center.mt-4
@@ -162,19 +162,19 @@
               p.mb-0 Se identifican los factores que determinan de verdad el éxito de la decisión y se limita su número a un rango de cuatro a siete, porque una lista más extensa vuelve la comparación difícil de sostener y de explicar ante terceros.
           .row(numero="2" titulo="Asignar los pesos")
             .col-12
-              p.mb-0 Se reparte entre los criterios un total de cien por ciento, de modo que el peso de cada uno quede explícito y pueda discutirse antes de calificar.
+              p.mb-0 Se reparte cien por ciento entre los criterios elegidos según su importancia relativa. El ejercicio obliga a jerarquizar y deja por escrito qué le importa más a la organización, en lugar de declararlo todo prioritario.
           .row(numero="3" titulo="Definir la escala")
             .col-12
-              p.mb-0 Se fija el rango de calificación y el significado de cada valor, para que dos personas distintas puedan puntuar la misma alternativa y obtener un resultado equivalente.
+              p.mb-0 Se establece un rango de calificación uniforme para todos los criterios, por ejemplo, de uno a diez, y se describe con palabras qué significa cada extremo, de modo que dos personas distintas califiquen de forma equivalente.
           .row(numero="4" titulo="Calificar cada alternativa")
             .col-12
-              p.mb-0 Se puntúa cada opción en cada criterio con la información disponible, dejando anotada la fuente que respalda la cifra.
+              p.mb-0 Se puntúa opción por opción en cada criterio con la información disponible en el momento y se deja constancia de la fuente empleada, sea una cotización, un registro propio o un dato sectorial.
           .row(numero="5" titulo="Calcular el puntaje ponderado")
             .col-12
-              p.mb-0 Se multiplica cada calificación por el peso de su criterio y se suman los productos para obtener el resultado de cada alternativa.
+              p.mb-0 Se multiplica cada calificación por el peso de su criterio y se suman los productos de cada alternativa. La suma ordena las opciones y muestra en qué criterio se abrió la diferencia.
           .row(numero="6" titulo="Revisar la sensibilidad")
             .col-12
-              p.mb-0 Se comprueba qué ocurre con el orden si se modifica el peso de un criterio, porque un resultado que se invierte con un ajuste pequeño no es concluyente.
+              p.mb-0 Se modifican los pesos de los criterios más discutidos y se comprueba si el orden de las alternativas se mantiene. Un orden que se invierte con un ajuste menor advierte que falta información.
 
     //- La pestaña de 25x8 en (289,4310) marca este bloque como `.cajon`.
     .row.justify-content-center.mt-4

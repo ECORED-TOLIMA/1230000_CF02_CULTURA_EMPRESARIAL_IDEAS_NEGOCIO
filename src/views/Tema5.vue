@@ -140,7 +140,7 @@
         figure.mb-3
           img(src="@/assets/curso/temas/t5/tab-3.svg" style="width: 98px").m-auto
         h4.text-center Intervención
-        p.mb-0 Una herramienta que recibe asigna y documenta cada orden con su historial.
+        p.mb-0 Una herramienta que recibe, asigna y documenta cada orden con su historial.
       .col-md.tarjeta.bg-5.p-4
         figure.mb-3
           img(src="@/assets/curso/temas/t5/tab-4.svg" style="width: 98px").m-auto

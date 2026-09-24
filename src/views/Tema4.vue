@@ -535,7 +535,7 @@
               .row.justify-content-center.mb-3
                 .col-auto
                   h4.text-center Registro mercantil
-                  p.text-center.mb-0 La matrícula ante la cámara de comercio, renovada cada año antes del 31 de marzo.
+                  p.text-center.mb-0 La matrícula ante la Cámara de Comercio, renovada cada año antes del 31 de marzo.
       .col-10.col-md-6.col-lg-4.mb-4.mb-md-0(data-aos="fade-right")
         .tarjeta-avatar
           img(src="@/assets/curso/temas/t4/req-2.svg" alt="").m-auto
