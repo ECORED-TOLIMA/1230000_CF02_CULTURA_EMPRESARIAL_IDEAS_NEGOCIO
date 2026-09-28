@@ -149,7 +149,7 @@
 
     p.mt-4(data-aos="fade-right") La secuencia ejemplifica un rasgo característico de los problemas tecnológicos: la falla que experimenta el cliente, el retraso, se encontraba a varios pasos de su causa real, el registro manual. Sin ese análisis, la empresa habría contratado más técnicos sin resolver nada.
 
-    p(data-aos="fade-right") En el caso que sigue el problema no aparece dentro de la operación, sino en el camino que recorre el producto hasta el comprador final. Una asociación puede fabricar con excelencia y aun así recibir una fracción del valor que su trabajo genera, lo que desplaza la innovación desde el proceso hacia el modelo de negocio y obliga a intervenir el canal, el precio y la organización interna a la vez.
+    p(data-aos="fade-right") En el caso que sigue, el problema no aparece dentro de la operación, sino en el camino que recorre el producto hasta el comprador final. Una asociación puede fabricar con excelencia y aun así recibir una fracción del valor que su trabajo genera, lo que desplaza la innovación desde el proceso hacia el modelo de negocio y obliga a intervenir el canal, el precio y la organización interna a la vez.
 
     separador
     #t_5_3.titulo-segundo.color-acento-contenido

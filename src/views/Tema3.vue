@@ -160,8 +160,8 @@
               p.mb-0 #[b Caso frecuente:] una panificadora de Pasto establece un plan de mantenimiento preventivo y reposición gradual en lugar de una compra única.
           .row(numero="3" titulo="Ineficiencia energética")
             .col-12
-              p El consumo de energía por unidad producida supera el promedio del sector sin que la empresa lo advierta. La señal de alerta es una factura que crece más rápido que la producción.
-              p.mb-0 #[b Caso frecuente:] un taller metalmecánico de Duitama reprograma sus horarios de operación y sustituye la iluminación, con lo que reduce el consumo sin detener la producción.
+              p El consumo de energía por unidad producida supera el promedio del sector sin que la empresa lo advierta. La señal de alerta es una factura que crece más rápido que la producción. 
+              p.mb-0 #[b Caso frecuente:] un taller metalmecánico de Duitama reprograma sus horarios de operación y sustituye la iluminación, con lo que baja su costo mensual.
           .row(numero="4" titulo="Falta de integración de la información")
             .col-12
               p Los mismos datos se digitan varias veces en registros distintos que no conversan entre sí. La señal de alerta es la aparición de cifras contradictorias entre áreas.

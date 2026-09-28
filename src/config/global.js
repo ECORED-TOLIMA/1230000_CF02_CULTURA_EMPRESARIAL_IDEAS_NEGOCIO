@@ -233,7 +233,7 @@ export default {
     {
       termino: 'Innovación disruptiva',
       significado:
-        'innovación que crea un mercado nuevo o transforma uno existente, al entrar por segmentos poco atendidos con una oferta más simple o económica termina desplazando a los competidores establecidos.',
+        'innovación que crea un mercado nuevo o transforma uno existente, al entrar por segmentos poco atendidos con una oferta más simple o económica, termina desplazando a los competidores establecidos.',
     },
     {
       termino: 'Innovación empresarial',
@@ -273,7 +273,7 @@ export default {
     {
       termino: 'Propuesta de valor',
       significado:
-        'enunciado que precisa por qué el cliente debe preferir una solución frente a las existentes. Para resultar efectiva debe ser específica, cuantificada, creíble y diferenciada.',
+        'enunciado que precisa por qué el cliente debe preferir una solución frente a las existentes. Para resultar efectiva, debe ser específica, cuantificada, creíble y diferenciada.',
     },
   ],
   referencias: [
